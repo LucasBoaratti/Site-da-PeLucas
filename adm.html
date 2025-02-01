@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeLúcas - Pedidos</title>
+    <link rel="shortcut icon" href="./images/Gato Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <body>
+
+    <!-- Adicionando o link do JavaScript -->
+    <script type="module" src="./scripts/orders.js" defer></script>
+    <!-- Fim do link do JavaScript -->
+
+    <!-- Criando a área de informações -->
+    <div class="cor-de-fundo-informacoes">
+      <div class="container">
+        <div class="cabecalho-informacoes">          
+          <h3> Bem vindo à nossa loja. Tenha uma boas compras! </h3>
+          <h3> Entregamos para todo o Brasil - Ligue 0800 1234 567 </h3>
+          <h3> Precisa de ajuda? </h3>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do cabeçalho de informações -->
+
+    <header>
+
+      <div class="container">
+        <!-- Criando o conteúdo principal do cabeçalho -->
+        <div class="cabecalho">
+          <div class="logo">
+            <img src="./images/Logomarca.png" alt="Logomarca do site">
+          </div>
+          <div class="barra-de-navegacao">
+            <nav>
+              <ul>
+                <li> <a href="products.html"> Produtos </a> </li>
+                <li> <a href="adm.html"> Pedidos </a> </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="barra-lupa">
+            <input type="text" id="barra-de-pesquisa" placeholder="O que você procura?">
+            <a href="products.html"> <i class="bi bi-search" id="lupa"> </i></a>
+          </div>
+          <div class="icones-cabecalho">
+            <a href="index.html"><i class="bi bi-house-door"></i></a>
+            <a href="checkout.html"><i class="bi bi-cart"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Fim do conteúdo principal do cabeçalho -->
+
+    </header>
+
+    <!-- Componente Lista de Pedidos Realizados -->
+    <main class="product main-content container">
+      <div class="product text-container">
+        <h2 class="main-text">Pedidos</h2>
+        <p>Relação de pedidos realizados:</p>
+      </div>
+
+      <section class="product text-container">
+        <div id="orders">
+          <div class="grid_col_1" id="order-list">          
+          </div>
+        </div>
+
+          <div class="grid_col_2">
+              <button class="button checkout_btn" id="export-button">EXPORTAR</button>    
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer id="rodape-adm">
+
+      <div class="rodape">
+        <!-- Criando as informações de direitos reservados -->
+        <div class="direitos">
+          <h3> © 2024 PeLúcas - Todos os direitos reservados </h3>
+        </div>
+        <!-- Fim das informações de direitos reservados -->
+        
+        <!-- Criando as informacoes sobre o desenvolvimento da loja -->
+        <div class="informacoes-loja">
+          <h3> Site desenvolvido por: Lucas Henrique Boaratti Silva </h3>
+          <h3> Estudante do SENAI cursando Desenvolvimento de Sistemas </h3>
+        </div>
+        <!-- Fim das informacoes sobre o desenvolvimento da loja -->
+
+        <!-- Criando as informações sobre a loja -->
+        <div class="informacoes-sobre-loja">
+          <h3> Loja </h3>
+          <h3> <a href="Sobre_Nós.html"> Sobre nós </a> </h3>
+          <h3> <a href="Fale_Conosco.html"> Fale conosco </a> </h3>
+        </div>
+        <!-- Fim das informações sobre a loja -->
+
+        <!-- Criando as informações do contato da loja -->
+        <div class="contatos">
+          <h3 id="texto-contatos"> Contatos: </h3>
+          <h3> lucasboaratti15@gmail.com </h3>
+          <div class="icones">
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/?locale=pt_BR"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.google.com/maps/place/Escola+e+Faculdade+de+Tecnologia+Senai+Roberto+Mange/@-22.9133411,-47.067322,17.75z/data=!4m6!3m5!1s0x94c8c8c794884427:0x15a2759628f243d1!8m2!3d-22.9140476!4d-47.0681209!16s%2Fg%2F1td7d7zd?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D"><i class="bi bi-geo"></i></a>
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+        </div>
+        <!-- Fim das informações do contato da loja -->
+
+      </div>
+
+    </footer>
+    
+  </body>
+
+</html>
